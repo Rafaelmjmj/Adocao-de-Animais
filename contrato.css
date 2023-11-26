@@ -22,10 +22,14 @@ header {
 }
 
 header a {
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
+    
+}
+#navegador{
+    color: rgb(176, 179, 237);
+
 }
 
 header abbr{
@@ -83,4 +87,50 @@ input[type="text"] {
 
 .submit-btn:hover {
     background-color: #5a56d6;
+}
+/* Estilos para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    nav {
+        float: none;
+        margin-top: 0;
+    }
+
+    .nav a {
+        display: block;
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .banner h2 {
+        font-size: 1.5em;
+    }
+
+    .animal-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Estilos para telas menores que 480px */
+@media screen and (max-width: 480px) {
+    header {
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    .banner h2 {
+        font-size: 1.2em;
+    }
+}
+abbr{
+    text-decoration: none;
+
 }
